@@ -27,10 +27,11 @@ ol.menu2{
   font-size: 20px;
   border-top:1px solid gray;
   border-bottom:1px solid gray;
+
 }
 
 #textframe {
-        border:1px solid black;
+        border:1px solid gray;
         padding:40px;
         margin:10px 50px 20px 50px;
         display:block;
@@ -39,9 +40,9 @@ ol.menu2{
 /*맨 위로 빨간 둥글 버튼*/
 a.button {
     width:100px;
-    background-color: #f8585b;
+    background-color: #ED006D;
     border-radius:30px;
-    color:#fff;
+    color:#ffff;
     padding: 10px 0;
     text-align: center;
     text-decoration: none;
@@ -50,6 +51,32 @@ a.button {
     margin: 4px;
     cursor: pointer;
     display: block; margin: 0px auto;
+}
+
+body.back {
+  background-color: yellow;
+  background-image: url('lemon.jpg');
+  background-repeat:repeat-y;
+}
+table {
+  width: 100%;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+}
+th, td {
+  border-bottom: 1px solid #444444;
+  padding: 10px;
+  text-align: center;
+}
+thead tr {
+  background-color: #3F0099;
+  color: #ffffff;
+}
+tbody tr:nth-child(2n) {
+  background-color: #D1B2FF;
+}
+tbody tr:nth-child(2n+1) {
+  background-color: #F5D6FF;
 }
 
 /*

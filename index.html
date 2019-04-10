@@ -1,13 +1,31 @@
 <!doctype html>
 <html>
   <head>
+    <style>
+    img{
+      width:200;
+      height:200;
+    }
+    </style>
     <title>나의 SW 도전기</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="Stylesheet.css">
+    <script>
+    var message="오른쪽 버튼은 사용할 수 없습니다~!!";
+    function clickIE4(){
+      if (event.button==2){
+        alert(message);
+        return false;
+      }
+    }
+    if(document.all&&!document.getElementById)
+    document.onmousedown=clickIE4;
+    document.oncontextmenu=
+    new Function("alert(message);return false")
+    </script>
   </head>
 
-<body>
-
+<body class="back">
   <h1><a class="menu" href="index.html">나의 SW 도전기</a></h1>
 
     <ol class="menu2">
@@ -16,7 +34,9 @@
       <a class="menu" href="2basic.html">mySQL</a>
     </ol>
 
-<br><br>
+
+
+<br>
 
 <div id="textframe">
   <h2>류정은</h2><br>
@@ -39,7 +59,7 @@
         <tr><td>디인예입문</td><td>X</td><td>수시과제</td>
         <tr><td>스텔&디콘</td><td>4/16</td><td>5/30</td>
         <tr><td>DB기초</td><td>4/15</td><td>X</td>
-        <tr><td>인터랙션</td><td>X</td><td>4/11</td>
+        <tr><td>인터랙션</td><td>4/16</td><td>4/11</td>
       </tbody>
       </table>
   </p>

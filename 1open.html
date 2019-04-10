@@ -5,6 +5,34 @@
 <title>나의 HTML&CSS</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="Stylesheet.css">
+<script>
+function nightDayHandler(self){
+var target = document.querySelector('body');
+if(self.value === 'night'){
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  self.value = 'day';
+
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = 'powderblue';
+    i = i + 1;
+  }
+} else {
+  target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  self.value = 'night';
+
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i < alist.length){
+    alist[i].style.color = 'pink';
+    i = i + 1;
+  }
+}
+}
+</script>
 </head>
 
 <body>
@@ -15,7 +43,10 @@
     &nbsp/&nbsp
     <a class="menu" href="2basic.html">mySQL</a>
   </ol>
-<br><br>
+<br> 
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    "><br>
 <div id="textframe">
 
     <h2>나만의 웹사이트 만들기</h2>
@@ -56,7 +87,8 @@
       <div><a href=#>top</a></div>
       <hr>
       <xmp> <font color="☆">☆</font></xmp>
-    <font color="ff0000">글자를 빨강색으로 출력합니다.</font>
+    <font color="ff0000">글자를 빨강색으로 출력합니다.</font><br>
+    <font color="#F78181">글자를 빨강색으로 출력합니다.</font>
     <hr>
     사진에다 링크를 겁니다. <xmp><a href="연결할 사이트 링크"><img src="사진 링크"></a></xmp>
 <p>팁<br>
